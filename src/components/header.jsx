@@ -2,17 +2,30 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
-const HeaderContainer = styled.div`
-  background-color: #ccc;
+const HeaderContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+`
+const Nav = styled.nav`
+  a {
+    margin-left: 2rem;
+  }
 `
 
 const Header = () => (
   <HeaderContainer>
-    <header>
-      <h1>
-        <Link to="/">Motoki's Blog</Link>
-      </h1>
-    </header>
+    <h1>
+      <Link to="/">ナイトーのブログ</Link>
+    </h1>
+    <Nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/categories">Categories</Link>
+    </Nav>
   </HeaderContainer>
 )
 
