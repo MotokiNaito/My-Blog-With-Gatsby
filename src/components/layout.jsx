@@ -1,6 +1,5 @@
 import React, { Fragment } from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
 import styled, { createGlobalStyle } from "styled-components"
 
 import Header from "./header"
