@@ -42,7 +42,7 @@ export const query = graphql`
       nodes {
         title
         slug
-        date
+        date(formatString: "MMM DD, YYYY")
         category
         excerpt {
           excerpt
