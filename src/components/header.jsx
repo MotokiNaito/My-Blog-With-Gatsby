@@ -19,7 +19,7 @@ const Nav = styled.nav`
 const Header = () => (
   <HeaderContainer>
     <h1>
-      <Link to="/">Web Night</Link>
+      <Link to="/">Web Night</Link> 
     </h1>
     <Nav>
       <Link to="/">Home</Link>

@@ -8,7 +8,8 @@ import SEO from "../components/seo"
 const BlogPostTemplate = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    {data}
+    <h1>{data.contentfulMyBlog.title}</h1>
+    <div>{data.contentfulMyBlog.content.content}</div>
   </Layout>
 )
 

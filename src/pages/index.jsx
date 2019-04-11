@@ -40,6 +40,7 @@ export const query = graphql`
   query {
     allContentfulMyBlog {
       nodes {
+        id
         title
         slug
         date(formatString: "MMM DD, YYYY")
