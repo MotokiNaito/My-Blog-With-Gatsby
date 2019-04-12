@@ -30,6 +30,15 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: #222;
   }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  footer {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    
+  }
 `
 
 const Wrapper = styled.div`
