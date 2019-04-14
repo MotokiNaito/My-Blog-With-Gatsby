@@ -13,6 +13,19 @@ const HeaderContainer = styled.header`
 const Nav = styled.nav`
   a {
     margin-left: 2rem;
+    position: relative;
+    &.is-active {
+      cursor: default;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #333;
+      }
+    }
   }
 `
 
@@ -22,9 +35,8 @@ const Header = () => (
       <Link to="/">Web Night</Link> 
     </h1>
     <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/categories">Categories</Link>
+      <Link to="/" activeClassName="is-active">Home</Link>
+      <Link to="/about" activeClassName="is-active">About</Link>
     </Nav>
   </HeaderContainer>
 )
