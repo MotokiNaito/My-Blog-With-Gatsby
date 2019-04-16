@@ -5,6 +5,8 @@ import styled, { createGlobalStyle } from "styled-components"
 import Header from "./header"
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
   *,
   *:before,
   *:after {
@@ -21,9 +23,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     line-height: 1.6;
     margin: 0;
-      padding: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   h1, h2, h3, h4 {
+    font-family: "Sawarabi Mincho";
     margin: 0;
   }
   a {
