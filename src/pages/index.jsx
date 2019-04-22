@@ -20,12 +20,6 @@ const Article = styled.article`
   .article__text {
     width: 50%;
     padding-left: 4rem;
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 0.6px;
-      margin-top: -1rem;
-      margin-bottom: 0.5rem;
-    }
     p {
       font-size: 1.4rem;
       line-height: 1.8;

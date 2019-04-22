@@ -29,6 +29,20 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4 {
     font-family: "Sawarabi Mincho";
     margin: 0;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 0.6px;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
   }
   a {
     text-decoration: none;
