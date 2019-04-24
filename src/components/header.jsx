@@ -32,7 +32,7 @@ const Nav = styled.nav`
 const Header = () => (
   <HeaderContainer>
     <h1>
-      <Link to="/">Web Night</Link> 
+      <Link to="/">Motoki's Web Dev</Link> 
     </h1>
     <Nav>
       <Link to="/" activeClassName="is-active">Home</Link>
