@@ -69,7 +69,7 @@ const Layout = ({ children }) => (
     <Header />
     <Wrapper>
       <main>{children}</main>
-      <footer>© Copyright Dev Night 2019</footer>
+      <footer>© Copyright Motoki's Web Dev 2019</footer>
     </Wrapper>
     <GlobalStyle />
   </Fragment>
