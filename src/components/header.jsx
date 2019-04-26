@@ -14,6 +14,9 @@ const Nav = styled.nav`
   a {
     margin-left: 2rem;
     position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
     &.is-active {
       cursor: default;
       &:after {
