@@ -14,12 +14,21 @@ const MainTitle = styled.h1`
 const Article = styled.article`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   .article__thumbnail {
     width: 50%;
+    @media (max-width: 880px) {
+      width: 100%;
+    }
   }
   .article__text {
     width: 50%;
     padding-left: 4rem;
+    @media (max-width: 880px) {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2rem;
+    }
     p {
       font-size: 1.4rem;
       line-height: 1.8;
