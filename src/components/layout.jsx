@@ -36,13 +36,22 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.6px;
     margin-top: -1rem;
     margin-bottom: 0.5rem;
+    @media (max-width: 880px) {
+      font-size: 2.4rem;
+    }
   }
   h2 {
     font-size: 2.4rem;
+    @media (max-width: 880px) {
+      font-size: 2rem;
+    }
   }
   h3 {
     font-size: 2rem;
     text-transform: uppercase;
+    @media (max-width: 880px) {
+      font-size: 1.8rem;
+    }
   }
   a {
     text-decoration: none;
@@ -55,6 +64,9 @@ const GlobalStyle = createGlobalStyle`
   footer {
     margin-top: 12rem;
     margin-bottom: 2rem;
+    @media (max-width: 880px) {
+      margin-top: 6rem;
+    }
     
   }
 `
