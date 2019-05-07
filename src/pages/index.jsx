@@ -9,6 +9,9 @@ const MainTitle = styled.h1`
   font-size: 2rem;
   text-align: center;
   margin: 9rem 0 12rem;
+  @media (max-width: 880px) {
+    margin: 2.5rem 0 6rem;
+  }
 `
 
 const Article = styled.article`
@@ -35,12 +38,15 @@ const Article = styled.article`
     }
     .meta {
       color: #999;
+      letter-spacing: 1px;
       &__date {
         margin-right: 2rem;
       }
     }
     .link__readmore {
       color: #999;
+      transition: color 0.3s ease-out;
+      letter-spacing: 2px;
       &:hover {
         color: #222;
       }
