@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const MainTitle = styled.h1`
   font-size: 2rem;
   text-align: center;
-  margin: 9rem 0 12rem;
+  margin: 9rem 0 14rem;
   @media (max-width: 880px) {
     margin: 2.5rem 0 6rem;
   }
