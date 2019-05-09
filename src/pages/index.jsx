@@ -20,8 +20,18 @@ const Article = styled.article`
   flex-wrap: wrap;
   .article__thumbnail {
     width: 50%;
+    overflow: hidden;
     @media (max-width: 880px) {
       width: 100%;
+    }
+    img {
+      transition: transform 0.3s ease-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
     }
   }
   .article__text {
