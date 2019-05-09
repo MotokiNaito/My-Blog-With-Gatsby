@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 2;
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -62,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
   footer {
+    text-align: center;
     margin-top: 12rem;
     margin-bottom: 2rem;
     @media (max-width: 880px) {
@@ -81,7 +82,9 @@ const Layout = ({ children }) => (
     <Header />
     <Wrapper>
       <main>{children}</main>
-      <footer>© Copyright Motoki's Web Dev 2019</footer>
+      <footer>
+        <small>© Copyright Moto Blog 2019</small>
+      </footer>
     </Wrapper>
     <GlobalStyle />
   </Fragment>

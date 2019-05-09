@@ -6,15 +6,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Article = styled.article`
+  margin: 0 auto;
   margin-top: 6rem;
+  max-width: 800px;
   .meta-data {
-    margin: 3rem 0;
+    margin: 3rem auto;
   }
 `
 
 const BlogPostTemplate = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title={data.contentfulMyBlog.title} />
     <Article>
       <h1>{data.contentfulMyBlog.title}</h1>
       <p className="meta-data">Published {data.contentfulMyBlog.date}</p>

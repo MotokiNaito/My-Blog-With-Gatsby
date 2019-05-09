@@ -18,7 +18,7 @@ const Nav = styled.nav`
     text-transform: uppercase;
     font-weight: bold;
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0;
@@ -53,11 +53,15 @@ const Nav = styled.nav`
 const Header = () => (
   <HeaderContainer>
     <h1>
-      <Link to="/">Motoki's Web Dev</Link> 
+      <Link to="/">Moto Blog</Link>
     </h1>
     <Nav>
-      <Link to="/" activeClassName="is-active">Home</Link>
-      <Link to="/about" activeClassName="is-active">About</Link>
+      <Link to="/" activeClassName="is-active">
+        Home
+      </Link>
+      <Link to="/about" activeClassName="is-active">
+        About
+      </Link>
     </Nav>
   </HeaderContainer>
 )

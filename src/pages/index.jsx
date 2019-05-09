@@ -66,7 +66,7 @@ const Article = styled.article`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" />
     <MainTitle>
       バンクーバーのデザインエージェンシーで働くWebデベロッパー、たまにデザイナー
     </MainTitle>
