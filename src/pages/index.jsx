@@ -78,7 +78,9 @@ const IndexPage = ({ data }) => (
           </Link>
         </div>
         <div className="article__text">
-          <h1>{node.title}</h1>
+          <Link to={node.slug}>
+            <h1>{node.title}</h1>
+          </Link>
           <div className="meta">
             <span className="meta__date">{node.date}</span>
             <span className="meta__category">{node.category}</span>

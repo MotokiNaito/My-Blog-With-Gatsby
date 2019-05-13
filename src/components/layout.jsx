@@ -76,6 +76,7 @@ const Wrapper = styled.div`
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
+  padding-top: 9rem;
 `
 const Layout = ({ children }) => (
   <Fragment>

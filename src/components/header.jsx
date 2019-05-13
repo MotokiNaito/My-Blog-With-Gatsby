@@ -7,8 +7,12 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   max-width: 1000px;
   width: 90%;
-  margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  background-color: #fff;
 `
 const Nav = styled.nav`
   a {
