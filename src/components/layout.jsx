@@ -1,8 +1,13 @@
 import React, { Fragment } from "react"
 import PropTypes from "prop-types"
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 
 import Header from "./header"
+
+const theme = {
+  black: "#393939",
+  maxWidth: "1000px",
+}
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
@@ -79,16 +84,18 @@ const Wrapper = styled.div`
   padding-top: 9rem;
 `
 const Layout = ({ children }) => (
-  <Fragment>
-    <Header />
-    <Wrapper>
-      <main>{children}</main>
-      <footer>
-        <small>© Copyright Moto Blog 2019</small>
-      </footer>
-    </Wrapper>
-    <GlobalStyle />
-  </Fragment>
+  <ThemeProvider theme={theme}>
+    <Fragment>
+      <Header />
+      <Wrapper>
+        <main>{children}</main>
+        <footer>
+          <small>© Copyright Moto Blog 2019</small>
+        </footer>
+      </Wrapper>
+      <GlobalStyle />
+    </Fragment>
+  </ThemeProvider>
 )
 
 Layout.propTypes = {
