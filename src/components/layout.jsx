@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
-    color: #222;
+    color: theme.black;
   }
   img {
     display: block;
